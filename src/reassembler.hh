@@ -48,4 +48,5 @@ private:
   uint64_t next_index_ = 0;
   uint64_t last_index_ =2147483647;
   bool try_push( Writer& my_writer, uint64_t first_index, std::string data );
+  void insert_pending(uint64_t first_index, std::string data);
 };
